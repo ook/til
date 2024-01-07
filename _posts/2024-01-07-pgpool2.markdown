@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "PGPool2"
+date:   2024-01-07 21:12:03 +0100
+categories: til postgreql database
+---
+I used to setup postgresql native streaming replication. Since major 12 it's rather easy task and I was happy  with it.
+
+I was searching a nice way to load balance PG queries when I hit PGPool2. I heard about it long time ago when it was only a pooling system: that's certainly why I missed its evolutions. Now it offers connection pooling (meh), replication (hmm), auto PG failover (w00t), load balancing (now we talk) and even HA from 3 instances of PGPool (gold!).
